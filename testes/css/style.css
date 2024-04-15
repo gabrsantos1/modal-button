@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#menuHorizontal{
+    background-color: #302f2f;
+}
+
+#menuHorizontal ul{
+    max-width: 300px;
+    list-style: none;
+    padding: 0;
+    background-color: #302f2f;
+}
+
+#menuHorizontal ul li{
+    display: inline;
+}
+
+#menuHorizontal ul li a{
+    display: inline-block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#menuHorizontal ul li a:hover{
+    color: #f1edb0;
+}
+
+body{
+    padding: 1rem;
+}
+
+button{
+    padding: .6rem 1.2rem;
+    background-color: #888;
+    color: #f1edb0;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 1rem;
+    transition: 0.4;
+}
+
+#abrirModal{
+    background-color: aquamarine;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 10;
+    width: 500px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 0.9rem;
+}
+
+.superiorModal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.corpoModal{
+    margin-bottom: 1rem;
+}
+
+#modal.hide,
+#fade.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#modal.hide {
+  top: 0;
+}
